@@ -4,7 +4,7 @@ import ReviewCard from './ReviewCard'
 const Review = () => {
     return (
         <>
-            <div className='container mx-auto p-4 mt-10'>
+            <div className='container mx-auto p-4 review-container'>
                 <h1 className="text-3xl lg:text-4xl font-bold mb-2 text-center">Some Happy <span className="text-primary">Faces</span></h1>
                 <h6 className='text-sm lg:text-base text-center'>Our Customers Have Great Stories</h6>
             </div>
