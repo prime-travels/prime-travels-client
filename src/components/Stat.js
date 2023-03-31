@@ -3,15 +3,15 @@ import React from 'react'
 const Stat = () => {
     return (
         <>
-            <div className="container mx-auto p-4 lg:px-20 h-auto lg:h-screen">
+            <div className="container mx-auto p-4 lg:px-20 mt-10 h-auto lg:h-screen">
                 <div className="stats border-none shadow-lg flex flex-col lg:flex-row">
 
                     <div className="stat">
-                        <div className="stat-figure text-primary">
+                        <div className="stat-figure text-secondary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                         </div>
                         <div className="stat-title">Happy Customers</div>
-                        <div className="stat-value text-primary">250 +</div>
+                        <div className="stat-value text-secondary">250 +</div>
                         <div className="stat-desc">21% more than last month</div>
                     </div>
 
