@@ -1,4 +1,4 @@
-import React from 'react'
+import { MdOutlineFacebook, MdAlternateEmail, MdSettingsPhone, MdAddLocationAlt } from 'react-icons/md'
 
 const Contact = () => {
     return (
@@ -15,16 +15,55 @@ const Contact = () => {
                             <h2 className="text-2xl lg:text-4xl font-bold mb-5">
                                 Contact <span className="text-secondary">With Us</span>
                             </h2>
-                            <form>
-                                <input type="text" placeholder="Your Name" className="input input-bordered input-secondary w-full mb-3" />
-                                <input type="email" placeholder="Tour Email" className="input input-bordered input-secondary w-full mb-3" />
-                                <input type="number" placeholder="Your Phone Number" className="input input-bordered input-secondary w-full mb-3" />
-                                <textarea className="textarea textarea-secondary w-full mb-3" placeholder="Your Message"></textarea>
-                                <button className="btn btn-secondary btn-block gap-2 mt-1">
-                                    Send
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-                                </button>
-                            </form>
+                            <div className="overflow-x-auto">
+                                <table className="table w-80 lg:w-96">
+                                    <tbody>
+                                        {/* row 1 */}
+                                        <tr>
+                                            <th>
+                                                <button className="btn btn-circle btn-secondary">
+                                                    <span className="text-2xl">
+                                                        <MdOutlineFacebook />
+                                                    </span>
+                                                </button>
+                                            </th>
+                                            <td className='font-bold'><a href='https://www.facebook.com/profile.php?id=100084352876248&mibextid=ZbWKwL'>facebook.com/prime-travels</a></td>
+                                        </tr>
+                                        {/* row 2 */}
+                                        <tr>
+                                            <th>
+                                                <button className="btn btn-circle btn-secondary">
+                                                    <span className="text-2xl">
+                                                        <MdAlternateEmail />
+                                                    </span>
+                                                </button>
+                                            </th>
+                                            <td className='font-bold'>prime.consultancy.travels@gmail.com</td>
+                                        </tr>
+                                        {/* row 3 */}
+                                        <tr>
+                                            <th>
+                                                <button className="btn btn-circle btn-secondary">
+                                                    <span className="text-2xl">
+                                                        <MdSettingsPhone />
+                                                    </span>
+                                                </button>
+                                            </th>
+                                            <td className='font-bold'>+8801625811725</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <button className="btn btn-circle btn-secondary">
+                                                    <span className="text-2xl">
+                                                        <MdAddLocationAlt />
+                                                    </span>
+                                                </button>
+                                            </th>
+                                            <td className='font-bold'>Paris Plaza, Nearby Dutch bangla Bank,<br />Town Hall, Maizdee Court, Noakhali</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
