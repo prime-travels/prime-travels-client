@@ -10,56 +10,75 @@ const Contact = () => {
                             <img src="/contact.svg" alt="Shoes" className="rounded-xl" />
                         </figure>
                     </div>
-                    <div className="card w-auto">
+                    <div className="card">
                         <div className="card-body">
-                            <h2 className="text-2xl lg:text-4xl font-bold mb-5">
+                            <h2 className="text-2xl lg text-secondary:text-4xl font-bold mb-5">
                                 Contact <span className="text-secondary">With Us</span>
                             </h2>
-                            <div className="overflow-x-auto">
-                                <table className="table w-80 lg:w-96">
+                            <div className="overflow-x-auto w-full">
+                                <table className="table w-full">
                                     <tbody>
                                         {/* row 1 */}
                                         <tr>
-                                            <th>
-                                                <button className="btn btn-circle btn-secondary">
-                                                    <span className="text-2xl">
-                                                        <MdOutlineFacebook />
-                                                    </span>
-                                                </button>
-                                            </th>
-                                            <td className='font-bold'><a href='https://www.facebook.com/profile.php?id=100084352876248&mibextid=ZbWKwL'>facebook.com/prime-travels</a></td>
+                                            <td>
+                                                <div className="flex items-center space-x-3">
+                                                    <div className="avatar">
+                                                        <div className="mask mask-squircle text-secondary text-4xl">
+                                                            <MdOutlineFacebook />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div className="font-bold">
+                                                            <a href='https://www.facebook.com/profile.php?id=100084352876248&mibextid=ZbWKwL'>/prime-travels</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
                                         {/* row 2 */}
                                         <tr>
-                                            <th>
-                                                <button className="btn btn-circle btn-secondary">
-                                                    <span className="text-2xl">
-                                                        <MdAlternateEmail />
-                                                    </span>
-                                                </button>
-                                            </th>
-                                            <td className='font-bold'>prime.consultancy.travels@gmail.com</td>
+                                            <td>
+                                                <div className="flex items-center space-x-3">
+                                                    <div className="avatar">
+                                                        <div className="mask mask-squircle text-secondary text-4xl">
+                                                            <MdAlternateEmail />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div className="font-bold">prime.consultancy<br />.travels@gmail.com</div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
                                         {/* row 3 */}
                                         <tr>
-                                            <th>
-                                                <button className="btn btn-circle btn-secondary">
-                                                    <span className="text-2xl">
-                                                        <MdSettingsPhone />
-                                                    </span>
-                                                </button>
-                                            </th>
-                                            <td className='font-bold'>+8801625811725</td>
+                                            <td>
+                                                <div className="flex items-center space-x-3">
+                                                    <div className="avatar">
+                                                        <div className="mask mask-squircle text-secondary text-4xl">
+                                                            <MdSettingsPhone />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div className="font-bold">+8801625811725</div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
+                                        {/* row 4 */}
                                         <tr>
-                                            <th>
-                                                <button className="btn btn-circle btn-secondary">
-                                                    <span className="text-2xl">
-                                                        <MdAddLocationAlt />
-                                                    </span>
-                                                </button>
-                                            </th>
-                                            <td className='font-bold'>Paris Plaza, Nearby Dutch bangla Bank,<br />Town Hall, Maizdee Court, Noakhali</td>
+                                            <td>
+                                                <div className="flex items-center space-x-3">
+                                                    <div className="avatar">
+                                                        <div className="mask mask-squircle text-secondary text-4xl">
+                                                            <MdAddLocationAlt />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div className="font-bold">Paris Plaza, Nearby<br />Dutch Bangla<br />Bank, Town Hall,<br />Maizdee Court, Noakhali</div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
