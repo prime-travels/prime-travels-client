@@ -27,7 +27,16 @@ export default function App({ Component, pageProps }) {
               <ul className="menu menu-horizontal">
                 {/* <!-- Navbar menu content here --> */}
                 <li>
-                  <Link className='btn btn-secondary text-base-100 rounded-xl' href='/visainfo'>Visa Info</Link>
+                  <Link className='btn border border-primary btn-ghost text-primary-focus hover:text-secondary m-2 font-bold rounded-xl' href='/visainfo'>Visa Info</Link>
+                </li>
+                <li>
+                  <Link className='btn border border-primary btn-ghost text-primary-focus hover:text-secondary m-2 font-bold rounded-xl' href='/flightinfo'>Flight Info</Link>
+                </li>
+                <li>
+                  <Link className='btn border border-primary btn-ghost text-primary-focus hover:text-secondary m-2 font-bold rounded-xl' href='/hotelinfo'>Hotel Info</Link>
+                </li>
+                <li>
+                  <Link className='btn border border-primary btn-ghost text-primary-focus hover:text-secondary m-2 font-bold rounded-xl' href='/helicopterinfo'>Helicopter Info</Link>
                 </li>
               </ul>
             </div>
@@ -42,7 +51,16 @@ export default function App({ Component, pageProps }) {
           <ul className="menu p-4 w-64 bg-base-100">
             {/* <!-- Sidebar content here --> */}
             <li>
-              <Link className='btn btn-secondary text-base-100 rounded-lg' href='/visainfo'>Visa Info</Link>
+              <Link className='btn border border-primary btn-ghost text-primary-focus hover:text-secondary m-2 font-bold rounded-lg' href='/visainfo'>Visa Info</Link>
+            </li>
+            <li>
+              <Link className='btn border border-primary btn-ghost text-primary-focus hover:text-secondary m-2 font-bold rounded-lg' href='/flightinfo'>Flight Info</Link>
+            </li>
+            <li>
+              <Link className='btn border border-primary btn-ghost text-primary-focus hover:text-secondary m-2 font-bold rounded-lg' href='/hotelinfo'>Hotel Info</Link>
+            </li>
+            <li>
+              <Link className='btn border border-primary btn-ghost text-primary-focus hover:text-secondary m-2 font-bold rounded-lg' href='/helicopterinfo'>Helicopter Info</Link>
             </li>
           </ul>
         </div>

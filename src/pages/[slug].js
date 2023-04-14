@@ -33,7 +33,7 @@ export const getServerSideProps = async (context) => {
         };
     }
     const query = encodeURIComponent(
-        `*[ _type == "post" && slug.current == "${pageSlug}" ]`
+        `*[ slug.current == "${pageSlug}" ]`
     );
     const url = `${process.env.SANITY_URL}query=${query}`;
     const data = await fetch(url).then((res) => res.json());
