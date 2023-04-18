@@ -5,9 +5,10 @@ import { useNextSanityImage } from "next-sanity-image";
 import Image from "next/image";
 import { sanityClient } from "../../sanityClient";
 const VisaDetails = (props) => {
-    const { title, body, image } = props;
+    const { title, body, image, poster } = props;
     // const [imageUrl, setImageUrl] = useState("");
     const imageProps = useNextSanityImage(sanityClient, image);
+    const posterProps = useNextSanityImage(sanityClient, poster);
     // useEffect(() => {
     //   const imageBuilder = imageUrlBuilder(sanityClient);
     //   setImageUrl(imageBuilder.image(image));
@@ -20,6 +21,7 @@ const VisaDetails = (props) => {
                 <PortableText
                     value={body}
                 />
+                {posterProps && <Image {...posterProps} layout="intrinsic" alt="" className="rounded-lg mb-6 mt-4" />}
             </div>
         </div>
     );
@@ -49,6 +51,7 @@ export const getServerSideProps = async (context) => {
                 title: post.title,
                 body: post.body,
                 image: post.mainImage,
+                poster: post.poster
             },
         };
     }
