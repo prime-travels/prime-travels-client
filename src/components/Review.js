@@ -1,5 +1,6 @@
-import React from 'react'
-import ReviewCard from './ReviewCard'
+import Image from 'next/image'
+import Link from 'next/link'
+import { FaQuoteLeft } from 'react-icons/fa'
 
 const Review = () => {
     return (
@@ -9,31 +10,32 @@ const Review = () => {
                 <h6 className='text-sm lg:text-base text-center'>Our Customers Have Great Stories</h6>
             </div>
             <div className="hero">
-                <div className="hero-content text-center">
-                    <div className='max-w-md'>
-                        <div className="carousel w-72 lg:w-full">
-                            <div id="item1" className="carousel-item w-full">
-                                <ReviewCard />
-                            </div>
-                            <div id="item2" className="carousel-item w-full">
-                                <ReviewCard />
-                            </div>
-                            <div id="item3" className="carousel-item w-full">
-                                <ReviewCard />
-                            </div>
-                            <div id="item4" className="carousel-item w-full">
-                                <ReviewCard />
+                <div className="hero-content text-center px-2 lg:px-10">
+                    <div className="card lg:card-side bg-base-100 p-4 shadow-xl">
+                        <div className="avatar">
+                            <div className="w-72 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                <Image
+                                    src="/review.jpg"
+                                    width={500}
+                                    height={500}
+                                    alt="Picture of the author"
+                                />
                             </div>
                         </div>
-                        <div className="flex justify-center w-full py-2 gap-2">
-                            <a href="#item1" className="btn btn-xs">1</a>
-                            <a href="#item2" className="btn btn-xs">2</a>
-                            <a href="#item3" className="btn btn-xs">3</a>
-                            <a href="#item4" className="btn btn-xs">4</a>
+                        <div className="card-body">
+                            <span className="text-secondary text-xl mr-2"><FaQuoteLeft /></span>
+                            <h4 className='text-start italic'>
+                                Excellent service provided by Prime Travels. Getting a Dubai visa seemed very stressful as we didn’t know where to begin With very little information online. I applied for a Dubai visa for my husband who has a Bangladeshi passport. We got scammed by insta global travel so avoid them at all cost. Dubai visa services is very genuine and fast. We got my husbands visa within 3 days so I’m very happy. Please don’t waste your money anywhere else, I highly recommend Prime Travels.
+                            </h4>
+                            <h2 className="card-title text-secondary">Mainul Hassan</h2>
+                            <h5 className="text-primary text-base font-semibold text-start">Successfully got Dubui Tourist Visa</h5>
                         </div>
                     </div>
                 </div>
             </div>
+            <h1 className='text-center my-6'>
+                <Link href='/reviews' className='btn btn-secondary font-bold rounded-lg'>See More Reviews</Link>
+            </h1>
         </>
     )
 }
