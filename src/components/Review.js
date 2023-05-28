@@ -15,7 +15,7 @@ const Review = () => {
                         <div className="avatar">
                             <div className="w-72 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                 <Image
-                                    src="/review.jpg"
+                                    src="/mainul.jpg"
                                     width={500}
                                     height={500}
                                     alt="Picture of the author"
@@ -28,7 +28,7 @@ const Review = () => {
                                 Excellent service provided by Prime Travels. Getting a Dubai visa seemed very stressful as we didn’t know where to begin With very little information online. I applied for a Dubai visa for my husband who has a Bangladeshi passport. We got scammed by insta global travel so avoid them at all cost. Dubai visa services is very genuine and fast. We got my husbands visa within 3 days so I’m very happy. Please don’t waste your money anywhere else, I highly recommend Prime Travels.
                             </h4>
                             <h2 className="card-title text-secondary">Mainul Hassan</h2>
-                            <h5 className="text-primary text-base font-semibold text-start">Successfully got Dubui Tourist Visa</h5>
+                            <h5 className="text-primary text-base font-semibold text-start">Successfully got Dubui & Maldives Tourist Visa</h5>
                         </div>
                     </div>
                 </div>

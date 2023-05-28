@@ -9,7 +9,7 @@ const Hero = () => {
                     <div className="card w-auto order-2 lg:order-1">
                         <div className="card-body">
                             <h2 className="text-2xl lg:text-4xl font-bold mb-5">
-                                Your Trusted <span className="text-secondary">Travel Partner</span>
+                                Your Complete <span className="text-secondary">Tour Assistant</span>
                             </h2>
                             <p>
                                 Simplifying Travel Around The World.
