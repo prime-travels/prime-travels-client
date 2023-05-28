@@ -37,7 +37,7 @@ const members = [
 const Team = () => {
     return (
         <>
-            <div className="hero min-h-screen">
+            <div className="hero">
                 <div className="hero-content text-center text-neutral-content">
                     <div className="lg:px-48 py-5">
                         <h2 className="text-2xl lg:text-4xl text-neutral font-bold mb-4 flex justify-center items-center"><span className="text-secondary text-4xl mr-3"></span> Our <span className="text-secondary ml-1.5">Staff</span></h2>
